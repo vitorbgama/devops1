@@ -5,7 +5,7 @@ services:
     
     nginx:
         restart: "always"
-        image: salimfpf/nginx:devops
+        image: zerovtr/nginx:devops
         ports:
             - "80:80"
         links:
@@ -15,7 +15,7 @@ services:
             
     redis:
         restart: "always"
-        image: salimfpf/redis:devops
+        image: zerovtr/redis:devops
         ports:
             - 6379
 
@@ -34,7 +34,7 @@ services:
 
     node:
         restart: "always"
-        image: salimfpf/node:devops
+        image: zerovtr/node:devops
         links:
             - redis
             - mysql
