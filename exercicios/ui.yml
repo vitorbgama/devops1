@@ -19,7 +19,7 @@ metadata:
   namespace: kube-system
 spec:
   rules:
-  - host: traefik.rancher.<dominio>
+  - host: traefik.v.lab.local.net
     http:
       paths:
       - path: /
